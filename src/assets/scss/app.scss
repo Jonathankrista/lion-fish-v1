@@ -1,0 +1,158 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+
+@include foundation-global-styles;
+@include foundation-grid;
+// @include foundation-flex-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+// @include foundation-range-input;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-card;
+@include foundation-close-button;
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-responsive-embed;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+// @include foundation-progress-element;
+// @include foundation-meter-element;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+// @include foundation-flex-classes;
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+// Logo
+
+#lion-fish-logo {
+    width:200px;
+margin: 15px 50px 50px -20px;
+height: auto;
+}
+
+//Footer
+
+.footer {
+    background-color:#020202;
+    padding-top: 25px;
+padding-bottom: 15px;
+}
+
+.social-media-icons {
+text-decoration:none;
+list-style-type:none;
+margin:0;
+}
+
+.connect-links > p:nth-child(2) {
+    margin-bottom:0;
+}
+
+.social-media-icons li{
+    display:inline-block;
+    margin:0px 5px 0px 5px;
+    color:#33BBEB;
+}
+
+.hide-for-small {
+font-size:50.5px;
+font-family:HelveticaNeueLTStdThin, serif;
+color: #ff581e;
+margin-bottom:-5px;
+}
+
+.learn-links p, .support-links p, .connect-links p{
+    font-size:16px;
+    color:#979797;
+    line-height:1.6rem;
+}
+
+#copy-right {
+    font-size:16px;
+    color:#979797;
+    line-height:1.6rem;
+    margin:1rem 0 0 0;
+}
+
+@font-face {
+    font-family:HelveticaNeueLTStdThin;
+    src: url(../fonts/HelveticaNeueLTStd-ThCn.otf);
+}
+
+.hide-for-small p {
+    padding-right: 25px;
+border-right: 1px solid #ccc;
+}
+
+.border {
+    padding-right:25px;
+    padding-left:25px;
+    border-right:1px solid #ccc;
+    border-left:1px solid #ccc;
+}
+
+#lion-fish-footer {
+padding-bottom: 50px;
+}
+
+#sticky-footer {
+    position:fixed;
+    bottom:0;
+    width:100%;
+
+}
+
+// slider for lionfish sass
+
+$white: #fefefe;
+
+/* Demo Styles */
+
+.docs-example-orbit-slide {
+  padding: 2rem 4rem;
+  color: $white;
+
+  .orbit-slide:nth-of-type(1) & {
+    background: dodgerblue;
+  }
+
+  .orbit-slide:nth-of-type(2) & {
+    background: rebeccapurple;
+  }
+
+  .orbit-slide:nth-of-type(3) & {
+    background: darkgoldenrod;
+  }
+
+  .orbit-slide:nth-of-type(4) & {
+    background: lightseagreen;
+  }
+}
